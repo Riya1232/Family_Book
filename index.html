@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Family Book</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Family Book</h1>
+        <hr> <hr>
+        <img id="family_img" src="family_img.jfif">
+        <h3 id="one">1. Our Family Book</h3>
+        <button onclick="family()" id="click">Next</button>
+        <hr>
+        <script>
+        var names = [
+            "2. Chandra Mohan Jakhmola (Grand Father)",
+            "3. Chandra Vati Jakhmola (Grand Mother)",
+            "4. Harish Chandra Jakhmola(Father)",
+            "5. Shakuntala Jakhmola (Mother)",
+            "6. Riya Jakhmola (Me)",
+            "7. Virendra Prasad Jakhmola (Uncle)",
+            "8. Pratibha Jakhmola (Aunt)",
+            "9. Himalay Jakhmola (Brother)",
+            "10. Yaami Jakhmola (Sister)"
+        ];
+        var images =[
+             "dadu.png",
+             "dadi.png",
+             "papa.png",
+             "mummy.png",
+             "me.png",
+             "chacha.png",
+             "chachi.png",
+             "hemu.png",
+             "yaami.png"                                                                                                                                                             
+        ];
+        var i=0;
+        function family(){
+            document.getElementById("one").innerHTML=names[i];
+            document.getElementById("family_img").src=images[i];
+            i++;
+            if(i==9)
+            {i=0}
+
+        }
+        </script>
+        </body>
+</html>
